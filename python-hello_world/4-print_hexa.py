@@ -1,2 +1,3 @@
 for num in range(99):
-    print(f"{num:2}  = {hex(num)} ")
+    print("{:2d} = 0x{:2X}".format(num, num))
+
