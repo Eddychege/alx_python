@@ -1,9 +1,11 @@
-#!/usr/bin/python3
+
 import random
 number = random.randint(-10000, 10000)
 
 absolute_number = abs(number)
 last_digit = absolute_number % 10
+if number < 0:
+    last_digit = -last_digit
 
 print("Last digit of",number, "is", last_digit, end=" ")
 
